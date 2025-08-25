@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    section {
+        @apply py-[75px];
+    }
+}
+
+@layer components {
+    .container {
+        @apply px-5 max-w-[100vw];
+    }
+    .card {
+        @apply bg-white rounded-xl shadow-sm ring-1 ring-black/5;
+    }
+    .card-hover {
+        @apply transition-all hover:shadow-md hover:ring-black/10;
+    }
+}
